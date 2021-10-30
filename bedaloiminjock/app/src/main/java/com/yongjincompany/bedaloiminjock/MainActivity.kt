@@ -1,10 +1,12 @@
 package com.yongjincompany.bedaloiminjock
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.viewpager.widget.ViewPager
 import com.yongjincompany.bedaloiminjock.databinding.ActivityMainBinding
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -47,5 +49,11 @@ class MainActivity : AppCompatActivity() {
 
         val gridviewAdapter = GridviewAdapter(this, img, txt)
         binding.gridview.adapter = gridviewAdapter
+
+        gridview.setOnItemClickListener { adapterView, view, i, l ->
+
+            val intent = Intent(this, LectureListActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
