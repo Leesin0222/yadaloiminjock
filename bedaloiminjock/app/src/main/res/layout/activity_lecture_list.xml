@@ -6,4 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".LectureListActivity">
 
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/list_viewpager"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
