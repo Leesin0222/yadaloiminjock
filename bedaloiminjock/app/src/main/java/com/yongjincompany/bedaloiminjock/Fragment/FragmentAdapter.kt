@@ -11,16 +11,18 @@ class FragmentAdapter(fm: FragmentManager) : FragmentPagerAdapter (fm) {
             0 -> {
                 FirstFragment()
             }
-            1-> SecondFragment()
-            else -> {
-                return ThirdFragment()
-            }
+            1 -> SecondFragment()
+            2 -> ThirdFragment()
+            3 -> FourthFragment()
+            4 -> FifthFragment()
+            else -> return SixthFragment()
+
         }
     }
 
     override fun getCount(): Int {
-        return 3
+        return 6
     }
-
-
 }
+
+
