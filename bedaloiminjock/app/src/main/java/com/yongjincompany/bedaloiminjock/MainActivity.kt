@@ -31,18 +31,14 @@ class MainActivity : AppCompatActivity() {
             R.drawable.semicolonbanner,
             R.drawable.semicolonbanner,
             R.drawable.semicolonbanner,
-            R.drawable.semicolonbanner,
-            R.drawable.semicolonbanner,
             R.drawable.semicolonbanner
         )
 
         val txt = arrayOf(
-            "프론트엔드",
-            "백엔드",
-            "안드로이드",
-            "ios",
+            "웹",
+            "앱",
             "게임",
-            "임베디드",
+            "임베(디드)",
             "인공지능",
             "보안"
         )
