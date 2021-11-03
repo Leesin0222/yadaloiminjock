@@ -27,6 +27,10 @@ class LectureListActivity : AppCompatActivity() {
         tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("AI")))
         tab_layout.addTab(tab_layout.newTab().setCustomView(createTabView("보안")))
 
+
+        list_viewpager.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(tab_layout))
+
+
         tab_layout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabReselected(p0: TabLayout.Tab?) {
 
