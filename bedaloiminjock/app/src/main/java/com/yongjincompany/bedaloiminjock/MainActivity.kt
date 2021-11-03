@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
             "앱",
             "게임",
             "임베(디드)",
-            "인공지능",
+            "AI",
             "보안"
         )
 
